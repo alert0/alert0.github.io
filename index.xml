@@ -18,8 +18,8 @@
       <pubDate>Fri, 18 Oct 2019 14:47:32 +0800</pubDate>
       
       <guid>https://alert0.github.io/post/mysqldump/</guid>
-      <description> mysql dump导入问题 mysql dump导入问题，出现导入失败，可能要加个
---default-character-set=utf-8  </description>
+      <description>mysql dump导入问题，出现导入失败，可能要加个
+--default-character-set=utf-8  参考</description>
     </item>
     
     <item>
