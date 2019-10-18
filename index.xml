@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>我的技术记事本</title>
+    <title>我的网络记事本</title>
     <link>https://alert0.github.io/</link>
-    <description>Recent content on 我的技术记事本</description>
+    <description>Recent content on 我的网络记事本</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
+    <language>zh_cn</language>
+    <copyright>&amp;copy; Copyright 2019</copyright>
     <lastBuildDate>Fri, 18 Oct 2019 10:59:15 +0800</lastBuildDate>
     
 	<atom:link href="https://alert0.github.io/index.xml" rel="self" type="application/rss+xml" />
