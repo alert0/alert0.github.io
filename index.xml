@@ -7,9 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>cn</language>
     <copyright>&amp;copy; Copyright 2019 </copyright>
+    <lastBuildDate>Fri, 18 Oct 2019 10:59:15 +0800</lastBuildDate>
     
 	<atom:link href="https://alert0.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>About</title>
+      <link>https://alert0.github.io/about/</link>
+      <pubDate>Fri, 18 Oct 2019 10:59:15 +0800</pubDate>
+      
+      <guid>https://alert0.github.io/about/</guid>
+      <description>A headline Some Content</description>
+    </item>
+    
+    <item>
+      <title>First</title>
+      <link>https://alert0.github.io/post/first/</link>
+      <pubDate>Fri, 18 Oct 2019 10:55:56 +0800</pubDate>
+      
+      <guid>https://alert0.github.io/post/first/</guid>
+      <description> test </description>
+    </item>
     
   </channel>
 </rss>
