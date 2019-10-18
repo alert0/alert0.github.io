@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh_cn</language>
     <copyright>&amp;copy; Copyright 2019</copyright>
-    <lastBuildDate>Fri, 18 Oct 2019 10:59:15 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 18 Oct 2019 14:47:32 +0800</lastBuildDate>
     
 	<atom:link href="https://alert0.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>mysql dump导入问题</title>
+      <link>https://alert0.github.io/post/mysqldump/</link>
+      <pubDate>Fri, 18 Oct 2019 14:47:32 +0800</pubDate>
+      
+      <guid>https://alert0.github.io/post/mysqldump/</guid>
+      <description> mysql dump导入问题 mysql dump导入问题，出现导入失败，可能要加个
+--default-character-set=utf-8  </description>
+    </item>
     
     <item>
       <title>About</title>

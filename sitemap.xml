@@ -3,12 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://alert0.github.io/about/</loc>
-    <lastmod>2019-10-18T10:59:15+08:00</lastmod>
+    <loc>https://alert0.github.io/categories/</loc>
+    <lastmod>2019-10-18T14:47:32+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alert0.github.io/tags/mysql/</loc>
+    <lastmod>2019-10-18T14:47:32+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alert0.github.io/post/mysqldump/</loc>
+    <lastmod>2019-10-18T14:47:32+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alert0.github.io/post/</loc>
+    <lastmod>2019-10-18T14:47:32+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alert0.github.io/tags/</loc>
+    <lastmod>2019-10-18T14:47:32+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://alert0.github.io/</loc>
+    <lastmod>2019-10-18T14:47:32+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alert0.github.io/categories/%E6%8A%80%E6%9C%AF/</loc>
+    <lastmod>2019-10-18T14:47:32+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alert0.github.io/about/</loc>
     <lastmod>2019-10-18T10:59:15+08:00</lastmod>
   </url>
   
@@ -18,20 +48,7 @@
   </url>
   
   <url>
-    <loc>https://alert0.github.io/post/</loc>
-    <lastmod>2019-10-18T10:55:56+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://alert0.github.io/categories/</loc>
-  </url>
-  
-  <url>
     <loc>https://alert0.github.io/series/</loc>
-  </url>
-  
-  <url>
-    <loc>https://alert0.github.io/tags/</loc>
   </url>
   
 </urlset>

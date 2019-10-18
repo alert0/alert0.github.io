@@ -7,9 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh_cn</language>
     <copyright>&amp;copy; Copyright 2019</copyright>
+    <lastBuildDate>Fri, 18 Oct 2019 14:47:32 +0800</lastBuildDate>
     
 	<atom:link href="https://alert0.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>mysql</title>
+      <link>https://alert0.github.io/tags/mysql/</link>
+      <pubDate>Fri, 18 Oct 2019 14:47:32 +0800</pubDate>
+      
+      <guid>https://alert0.github.io/tags/mysql/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
