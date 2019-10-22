@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="zh_cn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Java8 行为参数化传递 - 我的网络记事本</title>
+  <meta property="og:title" content="Java8 行为参数化传递 - 我的网络记事本" />
+  <meta name="twitter:title" content="Java8 行为参数化传递 - 我的网络记事本" />
+  <meta name="description" content="Lambda 表达式 1
+(String s) -&gt;s.lenght() int fun(String s) { return s.lenght; }  2
+(Apple a) -&gt; a.getWeight() &gt; 150 boolean fun(Apple a ) { return a.getWeight &gt; 150; }  3
+(int x, int y) -&gt; { System.out.println(&quot;r:&quot;); System.out.println(x &#43; 7); } void func(int x, int y) { System.out.println(&quot;r:&quot;); System.out.println(x &#43; 7); }  4
+()-&gt;42 int func(){ return 42; }  5
+(Apple a1 ,Apple a2) -&gt; a1.">
+  <meta property="og:description" content="Lambda 表达式 1
+(String s) -&gt;s.lenght() int fun(String s) { return s.lenght; }  2
+(Apple a) -&gt; a.getWeight() &gt; 150 boolean fun(Apple a ) { return a.getWeight &gt; 150; }  3
+(int x, int y) -&gt; { System.out.println(&quot;r:&quot;); System.out.println(x &#43; 7); } void func(int x, int y) { System.out.println(&quot;r:&quot;); System.out.println(x &#43; 7); }  4
+()-&gt;42 int func(){ return 42; }  5
+(Apple a1 ,Apple a2) -&gt; a1.">
+  <meta name="twitter:description" content="Lambda 表达式 1
+(String s) -&gt;s.lenght() int fun(String s) { return s.lenght; }  2
+(Apple a) -&gt; a.getWeight() &gt; 150 boolean fun(Apple a ) { return a.getWeight &gt; 150; }  3
+(int x, int y) -&gt; …">
+  <meta name="author" content="alert9"/>
+  <meta property="og:site_name" content="我的网络记事本" />
+  <meta property="og:url" content="https://alert0.github.io/post/java8-%E8%A1%8C%E4%B8%BA%E5%8F%82%E6%95%B0%E5%8C%96%E4%BC%A0%E9%80%92/" />
+  <meta property="og:type" content="article" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="generator" content="Hugo 0.58.3" />
+
+  <link rel="stylesheet" href="/css/style.css" media="all" />
+  <link rel="stylesheet" href="/css/syntax.css" media="all" />
+  <link rel="stylesheet" href="/css/custom.css" media="all" />
+
+  <script src="/js/script.js"></script>
+  <script src="/js/custom.js"></script>
+  <script defer src="/js/fontawesome.js"></script>
+</head>
+
+<body>
+
+<header class="site-header">
+  <nav class="site-navi">
+    <h1 class="site-title"><a href="/">我的网络记事本</a></h1>
+    <ul class="site-navi-items">
+      <li class="site-navi-item-categories"><a href="/categories/" title="Categories">Categories</a></li>
+      <li class="site-navi-item-tags"><a href="/tags/" title="Tags">Tags</a></li>
+      <li class="site-navi-item-archives"><a href="/post/" title="Archives">Archives</a></li>
+      <li class="site-navi-item-about"><a href="/about/" title="About">About</a></li>
+    </ul>
+  </nav>
+</header>
+<hr class="site-header-bottom">
+
+  <div class="main" role="main">
+    <article class="article">
+      
+      
+      <h1 class="article-title">Java8 行为参数化传递</h1>
+      
+      <hr class="article-title-bottom">
+      <ul class="article-meta">
+        <li class="article-meta-date"><time>October 21, 2019</time></li>
+        <li class="article-meta-categories">
+          <a href="/categories/java/">
+            <i class="fas fa-folder"></i>
+            java
+          </a>&nbsp;
+        </li>
+        <li class="article-meta-tags">
+          <a href="/tags/java8/">
+            <i class="fas fa-tag"></i>
+            java8
+          </a>&nbsp;
+        </li>
+      </ul>
+      
+      
+
+<h2 id="lambda-表达式">Lambda 表达式</h2>
+
+<p>1</p>
+
+<pre><code>(String s) -&gt;s.lenght()
+
+  int fun(String s) {
+      return s.lenght;
+  }
+</code></pre>
+
+<p>2</p>
+
+<pre><code>(Apple a) -&gt; a.getWeight() &gt; 150 
+  
+  boolean fun(Apple a ) { 
+      return a.getWeight &gt; 150;
+  }
+</code></pre>
+
+<p>3</p>
+
+<pre><code>(int x, int y) -&gt; {
+    System.out.println(&quot;r:&quot;);
+    System.out.println(x + 7);
+}
+
+void func(int x, int y) {
+    System.out.println(&quot;r:&quot;);
+    System.out.println(x + 7);
+
+}
+</code></pre>
+
+<p>4</p>
+
+<pre><code>()-&gt;42
+
+int func(){
+    return 42;
+}
+</code></pre>
+
+<p>5</p>
+
+<pre><code>(Apple a1 ,Apple a2) -&gt; a1.getWeight().compareTo(a2.getWeight() )
+
+int func(Apple a1, Apple a2) {
+    return a1.getWeight().compareTo(a2.getWeight() ;
+}
+</code></pre>
+
+<h2 id="函数式接口">函数式接口</h2>
+
+<pre><code>1 public interface Adder{
+ int add(int a, int b);
+}
+2 public interface SmartAdder extends Adder{
+ int add(double a, double b);
+}
+3 public interface Nothing{
+}
+</code></pre>
+
+<p>第二个是 函数式接口</p>
+
+<p>## 一般步骤</p>
+
+<p>1 记得行为参数化</p>
+
+<p>2 使用函数式接口来传递行为</p>
+
+<p>3 执行一个行为</p>
+
+<pre><code>public class BufferedReaderProcessorTest {
+
+
+    @FunctionalInterface
+    public interface BufferedReaderProcessor {
+        String process(BufferedReader b) throws IOException;
+    }
+
+
+    public static String processFile(BufferedReaderProcessor p) throws IOException {
+        try(
+
+            BufferedReader br  = new BufferedReader(new FileReader(&quot;data.txt&quot;)) ) {
+            return  p.process(br);
+        }
+
+
+    }
+
+    @Test
+    public void readTest(){
+        try {
+            String oneline = processFile((BufferedReader br) -&gt; br.readLine() );
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+
+}
+</code></pre>
+
+<pre><code>  public interface Predicate&lt;T&gt;{
+        boolean test(T t);
+    }
+
+    public static &lt;T&gt; List&lt;T&gt; filter(List&lt;T&gt; list, Predicate&lt;T&gt; p){
+        List&lt;T&gt; result = new ArrayList&lt;T&gt;();
+        for(T e:list){
+            if(p.test(e) ) {
+                result.add(e);
+            }
+        }
+        return  result;
+    }
+
+    @Test
+    public void filterGreeanAppstest2(){
+        List&lt;Apple&gt; i = filter(inventory,(Apple apple)-&gt;&quot;红色&quot;.equals(apple.getColor()) );
+
+        assertEquals(i.size() , 1) ;
+        assertEquals(i.get(0).getColor() , &quot;红色&quot;) ;
+
+    }
+
+    @FunctionalInterface
+    public interface  Consumer&lt;T&gt; {
+        void accept(T t);
+    }
+
+
+    public static &lt;T&gt; void forEach2(List&lt;T&gt; list, Consumer&lt;T&gt; c) {
+        for(T i :list) {
+            c.accept(i) ;
+        }
+    }
+
+    @Test
+    public void consumerTest(){
+
+        forEach2(Arrays.asList(&quot;1&quot;,&quot;2&quot;,&quot;3&quot;), (String i) -&gt; System.out.println(i+i+&quot;end&quot;) );
+    }
+
+    @FunctionalInterface
+    public interface  Function&lt;T,R&gt; {
+        R   apply(T t);
+    }
+
+    //泛型方法
+   // [连接](https://docs.oracle.com/javase/tutorial/extra/generics/methods.html)
+    public static &lt;T,R&gt; List&lt;R&gt; map(List&lt;T&gt; list, Function&lt;T,R&gt; f) {
+        List&lt;R&gt; r = new ArrayList&lt;&gt;();
+        for(T s: list) {
+            r.add( f.apply(s) );
+        }
+        return  r;
+    }
+
+
+    @Test
+    public void functionTest(){
+
+       map(Arrays.asList(&quot;1&quot;,&quot;22&quot;,&quot;333&quot;), (String s)-&gt;s.length()  )
+        .forEach(a-&gt; System.out.println(a));
+
+
+    }
+
+
+</code></pre>
+
+    </article>
+
+    
+
+
+    <ul class="pager article-pager">
+      <li class="pager-newer pager-noitem">&lt; Newer</li>
+      <li class="pager-older">
+        <a href="/post/mysqldump/" data-toggle="tooltip" data-placement="top" title="mysql dump导入问题">Older &gt;</a>
+      </li>
+    </ul>
+  </div>
+
+
+<div class="site-footer">
+  <div class="copyright">&copy; Copyright 2019</div>
+  <ul class="site-footer-items">
+    <li class="site-footer-item-about"><a href="/about/" title="About">About</a></li>
+  </ul>
+  <div class="powerdby">
+    Powered by <a href="https://gohugo.io/">Hugo</a> and <a href="https://github.com/taikii/whiteplain">Whiteplain</a>
+  </div>
+</div>
+
+
+</body>
+</html>

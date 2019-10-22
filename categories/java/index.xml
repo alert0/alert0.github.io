@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on 我的网络记事本</title>
-    <link>https://alert0.github.io/post/</link>
-    <description>Recent content in Posts on 我的网络记事本</description>
+    <title>java on 我的网络记事本</title>
+    <link>https://alert0.github.io/categories/java/</link>
+    <description>Recent content in java on 我的网络记事本</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh_cn</language>
     <copyright>&amp;copy; Copyright 2019</copyright>
     <lastBuildDate>Mon, 21 Oct 2019 13:51:37 +0800</lastBuildDate>
     
-	<atom:link href="https://alert0.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://alert0.github.io/categories/java/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -24,25 +24,6 @@
 (int x, int y) -&amp;gt; { System.out.println(&amp;quot;r:&amp;quot;); System.out.println(x + 7); } void func(int x, int y) { System.out.println(&amp;quot;r:&amp;quot;); System.out.println(x + 7); }  4
 ()-&amp;gt;42 int func(){ return 42; }  5
 (Apple a1 ,Apple a2) -&amp;gt; a1.</description>
-    </item>
-    
-    <item>
-      <title>mysql dump导入问题</title>
-      <link>https://alert0.github.io/post/mysqldump/</link>
-      <pubDate>Fri, 18 Oct 2019 14:47:32 +0800</pubDate>
-      
-      <guid>https://alert0.github.io/post/mysqldump/</guid>
-      <description>mysql dump导入问题，出现导入失败，可能要加个
---default-character-set=utf-8  参考</description>
-    </item>
-    
-    <item>
-      <title>First</title>
-      <link>https://alert0.github.io/post/first/</link>
-      <pubDate>Fri, 18 Oct 2019 10:55:56 +0800</pubDate>
-      
-      <guid>https://alert0.github.io/post/first/</guid>
-      <description> test </description>
     </item>
     
   </channel>
